@@ -92,26 +92,30 @@ namespace SimonDiceBrinca_1_
 
         private void btnEventoClick(object sender, EventArgs e)
         {
-            if (puntaje == 3 && level < 4)
+            if (puntaje == 1 && level < 7)
             {
                 level++;
                 puntaje = 0;
             }
             OrdenCorrecto = string.Empty;
             OrdenSeleccionado = string.Empty;
+
+            //Crear una nueva lista para guardar pictureboxes unicos para boxes seleccionados
+            List<PictureBox> PictureBoxesunicos = pictureBoxes.OrderBy(x => rnd.Next()).ToList();
+
             BoxesSeleccionados.Clear();
-            BoxesSeleccionados = pictureBoxes.OrderBy(x => rnd.Next()).Take(level).ToList();
-            
-            for (int i = 0; i < BoxesSeleccionados.Count; i++)
+            //Asegurarse que boxesseleccionados contenga solo cuatro unicos pictureboxes
+            for (int i = 0; i < level; i++)
             {
-                OrdenCorrecto += BoxesSeleccionados[i].BackColor + " ";
+                BoxesSeleccionados.Add(PictureBoxesunicos[i % pictureBoxes.Count]);
+                OrdenCorrecto += BoxesSeleccionados[i].BackColor.ToString() + " ";
             }
+
             Debug.WriteLine(OrdenCorrecto);
             index = 0;
             LimiteTiempo = 0;
             SeleccionandoColores = true;
             TimerJuego.Start();
-            /*CambiarColores();*/
         }
 
         
@@ -171,13 +175,23 @@ namespace SimonDiceBrinca_1_
 
         private void CambiarColores()
         {
-            // Cambiar de orden los colores disponibles
+            //Reordenar los colores de manera aleatoria
             colores = colores.OrderBy(c => rnd.Next()).ToList();
 
-            // Aplicar colores a los pictureboxes
+            //Asegurarse que los colores no se repitan en la secuencia
+            HashSet<Color> Coloresunicos = new HashSet<Color>();
+
+            //Aplicar colores unicos a los pictureboxes
             for (int i = 0; i < pictureBoxes.Count; i++)
             {
-                pictureBoxes[i].BackColor = colores[i];
+                //Asegurarse que el color es unico
+                Color Colorunico;
+                do
+                {
+                    Colorunico = colores[rnd.Next(colores.Count)];
+                } while (!Coloresunicos.Add(Colorunico));
+
+                pictureBoxes[i].BackColor = Colorunico;
             }
         }
     }

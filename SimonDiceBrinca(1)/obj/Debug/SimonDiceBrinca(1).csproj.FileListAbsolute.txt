@@ -8,3 +8,13 @@ C:\Users\carlo\Desktop\TEC\3er Semestre\Estructura de Datos\Unidad 4\SimonDiceBr
 C:\Users\carlo\Desktop\TEC\3er Semestre\Estructura de Datos\Unidad 4\SimonDiceBrinca(1)\bin\Debug\SimonDiceBrinca(1).pdb
 C:\Users\carlo\Desktop\TEC\3er Semestre\Estructura de Datos\Unidad 4\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca(1).exe
 C:\Users\carlo\Desktop\TEC\3er Semestre\Estructura de Datos\Unidad 4\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca(1).pdb
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\bin\Debug\SimonDiceBrinca(1).exe.config
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\bin\Debug\SimonDiceBrinca(1).exe
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\bin\Debug\SimonDiceBrinca(1).pdb
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca(1).csproj.AssemblyReference.cache
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca_1_.Form1.resources
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca_1_.Properties.Resources.resources
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca(1).csproj.GenerateResource.cache
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca(1).csproj.CoreCompileInputs.cache
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca(1).exe
+C:\Users\carlo\Desktop\SimonDiceBrinca\SimonDiceBrinca-main\SimonDiceBrinca-main\SimonDiceBrinca(1)\obj\Debug\SimonDiceBrinca(1).pdb
