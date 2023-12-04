@@ -39,7 +39,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 19);
+            this.label1.Location = new System.Drawing.Point(54, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 36);
             this.label1.TabIndex = 0;
@@ -49,11 +49,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 318);
+            this.label2.Location = new System.Drawing.Point(12, 318);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(339, 20);
+            this.label2.Size = new System.Drawing.Size(353, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Haz click en la misma secuencia de colores";
+            this.label2.Text = "Haz click en la misma secuencia de 3 colores";
             // 
             // button1
             // 
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 409);
+            this.ClientSize = new System.Drawing.Size(404, 405);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

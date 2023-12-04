@@ -69,7 +69,7 @@ namespace SimonDiceBrinca_1_
                 }
             }
             
-            if (intentos >= 3)
+            if (intentos >= level)
             {
                 
                 if (OrdenCorrecto == OrdenSeleccionado)
@@ -86,11 +86,13 @@ namespace SimonDiceBrinca_1_
                     MessageBox.Show("No seleccionaste el orden de colores correcto.");
                 }
             }
+
+            label2.Text = "Haz click en la misma secuencia de "+level+" colores";
         }
 
         private void btnEventoClick(object sender, EventArgs e)
         {
-            if (puntaje == 3 && level < 7)
+            if (puntaje == 3 && level < 4)
             {
                 level++;
                 puntaje = 0;
@@ -99,7 +101,7 @@ namespace SimonDiceBrinca_1_
             OrdenSeleccionado = string.Empty;
             BoxesSeleccionados.Clear();
             BoxesSeleccionados = pictureBoxes.OrderBy(x => rnd.Next()).Take(level).ToList();
-
+            
             for (int i = 0; i < BoxesSeleccionados.Count; i++)
             {
                 OrdenCorrecto += BoxesSeleccionados[i].BackColor + " ";
@@ -110,8 +112,6 @@ namespace SimonDiceBrinca_1_
             SeleccionandoColores = true;
             TimerJuego.Start();
             /*CambiarColores();*/
-
-
         }
 
         
@@ -126,7 +126,7 @@ namespace SimonDiceBrinca_1_
                 //NuevoPB.BackColor = Color.Black;
                 NuevoPB.Left = blocksX;
                 NuevoPB.Top = blocksY;
-                NuevoPB.Click += ClickOnPictureBox;
+                NuevoPB.Click += ClickEnPictureBox;
 
                 if (i == 2 || i == 4) 
                 {
@@ -151,13 +151,15 @@ namespace SimonDiceBrinca_1_
 
         }
 
-        private void ClickOnPictureBox(object sender, EventArgs e)
+        private void ClickEnPictureBox(object sender, EventArgs e)
         {
             if (!SeleccionandoColores && BoxesSeleccionados.Count > 1)
             {
+                
                 PictureBox temp = sender as PictureBox;
                 /*temp.BackColor = Color.Black;*/
                 OrdenSeleccionado += temp.BackColor + " ";
+                
                 Debug.WriteLine(OrdenSeleccionado);
                 intentos++;
             }
